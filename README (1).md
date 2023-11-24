@@ -7,4 +7,4 @@ Crime data is reported on a month-by-month basis, however the grocery price data
 We fix this issue by creating two functions; **MonthFromWeek()**, which takes as input a year and a number and outputs the month that numbered week falls in. The issue of overlapping weeks is addressed by employing the following convention: a week is said to be in the same month and year as its Monday. The second function, **toDate()**, simply serves to transform the output of MonthFromWeek() into a datetime object.
 
 test
-![Some Text here!!!](Initial Comparison.png)
+![Some text here !!!](https://github.com/KacperRawicki/delete-this/blob/main/Initial%20Comparison.png)
