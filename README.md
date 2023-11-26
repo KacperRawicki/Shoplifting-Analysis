@@ -8,11 +8,15 @@ Crime data is reported on a month-by-month basis, however the grocery price data
 We fix this issue by creating two functions; **MonthFromWeek()**, which takes as input a year and a number and outputs the month that numbered week falls in. The issue of overlapping weeks is addressed by employing the following convention: a week is said to be in the same month and year as its Monday. The second function, **toDate()**, simply serves to transform the output of MonthFromWeek() into a datetime object.\
 ## Initial Comparison
 An initial standardised comparison reveals an unusual spike in the count of shoplifting for the month of may. An extended plot of the data shows this spike reocurring in previous years. There are a number of posible causes for this anomaly, including human error or administrative delays, and the May data will therefore be omitted in this analysis. Additionally, a time lag of one month will be applied to the mean price, which has been found to result ina  stronger correlation.\
-![Figure 1](https://github.com/KacperRawicki/delete-this/blob/main/Direct%20comparison.png)
-![Figure 2](https://github.com/KacperRawicki/delete-this/blob/main/Adjusted%20Comparison.png)
+![Figure 1](https://github.com/KacperRawicki/delete-this/blob/main/Extended%20crime%20plot.png)
+![Figure 2](https://github.com/KacperRawicki/delete-this/blob/main/Initial%20Comparison.png)
+![Figure 3](https://github.com/KacperRawicki/delete-this/blob/main/Adjusted%20Comparison.png)
 ## Secondary Comparison
-The standardized figures show signs of correlation. Removing the date variable, we can see an apprent weak correlation. After a permutation spearman rank test, we see a correlation of **0.721** with a  pvalue of **0.0135** < 0.05, indicating evidence for a medium-strong correlation.
+The standardized figures show signs of correlation. Removing the date variable, we can see an apprent weak correlation. After a permutation spearman rank test, we see a correlation of **0.721** with a  pvalue of **0.0135** < 0.05, indicating evidence for a medium-strong correlation.\
+![Figure 4](https://github.com/KacperRawicki/delete-this/blob/main/Direct%20comparison.png)
 ## Further Comparisons
-Comparing the mean price with overall crime, we note a weaker correlation indicating insufficient evidence for an increase in criminal activity as a result of increased mean grocery prices. The correlation for this comparison following a permutation spearman rank test was **0.200**, with a p value of **0.296** > 0.05
+Comparing the mean price with overall crime, we note a weaker correlation indicating insufficient evidence for an increase in criminal activity as a result of increased mean grocery prices. The correlation for this comparison following a permutation spearman rank test was **0.200**, with a p value of **0.296** > 0.05\
+![Figure 5](https://github.com/KacperRawicki/delete-this/blob/main/Overall%20Crime%20Comparison.png)
+![Figure 6](https://github.com/KacperRawicki/delete-this/blob/main/Overall%20crime%20Direct%20Comparison.png)
 ## Conclusions
 This work concludes with presenting statistically significant evidence for a strong link between UK-wide reports of shoplifting and rises in mean grocery prices (p = 0.0135). There is insufficient evidence to conclude, however, that rises in grocery prices result in an overall increase in crime (p =0.296). Additionally, it should be stressed that this conclusion is based on data from years 2018/19, and it cannot account for changes in behaviour following the cutoff point, in particular the impact of the COVID-19 pandemic.
