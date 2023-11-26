@@ -6,8 +6,8 @@ This project uses grocery price data from https://www.kaggle.com/datasets/ziedze
 ## Date Compatibility Issues and Fix
 Crime data is reported on a month-by-month basis, however the grocery price data is dated using a year and a week number. This creates a number of issues, primarily that the data needs to be processed to line up the corresponding staistics, and additionally that an entry in the grocery data may correspond to multiple entries in the crime data; for example, if a week starts in may but goes into june, that record does not natrually correspond to any monthly crime statistic.
 We fix this issue by creating two functions; **MonthFromWeek()**, which takes as input a year and a number and outputs the month that numbered week falls in. The issue of overlapping weeks is addressed by employing the following convention: a week is said to be in the same month and year as its Monday. The second function, **toDate()**, simply serves to transform the output of MonthFromWeek() into a datetime object.
-![](https://github.com/KacperRawicki/delete-this/blob/main/Direct%20comparison.png)
-![](https://github.com/KacperRawicki/delete-this/blob/main/Adjusted%20Comparison.png)
+![Figure 1](https://github.com/KacperRawicki/delete-this/blob/main/Direct%20comparison.png)
+![Figure 2](https://github.com/KacperRawicki/delete-this/blob/main/Adjusted%20Comparison.png)
 ## Initial Comparison
 An initial standardised comparison reveals an unusual spike in the count of shoplifting for the month of may. An extended plot of the data shows this spike reocurring in previous years. There are a number of posible causes for this anomaly, including human error or administrative delays, and the May data will therefore be omitted in this analysis. Additionally, a time lag of one month will be applied to the mean price, which has been found to result ina  stronger correlation.
 figure
