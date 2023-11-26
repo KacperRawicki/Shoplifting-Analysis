@@ -1,6 +1,6 @@
 
 # Investigating links between crime and grocery prices
-It has been widely reported that shoplifting incidents have increased at an alarming pace amid the rising cost of living<sup>[1](https://news.sky.com/story/shoplifting-up-25-in-the-past-year-12987599)</sup><sup>[2](https://www.theguardian.com/uk-news/2023/sep/15/its-organised-looting-uk-in-grip-of-a-shoplifting-epidemic-say-store-owners)</sup> 
+It has been widely reported that shoplifting incidents have increased at an alarming pace amid the rising cost of living<sup>[1](https://news.sky.com/story/shoplifting-up-25-in-the-past-year-12987599)</sup> <sup>[2](https://www.theguardian.com/uk-news/2023/sep/15/its-organised-looting-uk-in-grip-of-a-shoplifting-epidemic-say-store-owners)</sup> 
 resulting in a government response earlier this year.<sup>[3](https://www.gov.uk/government/news/action-plan-to-tackle-shoplifting-launched)</sup>
 This project uses grocery price data from https://www.kaggle.com/datasets/ziedzen/uk-grocery-retailer-sales-and-pricing-analysis and crime data from https://data.police.uk/data/archive/ to explore possible relationships between fluctuiations in grocery prices and incidents of crime, in particular shoplifting.
 ## Date Compatibility Issues and Fix
